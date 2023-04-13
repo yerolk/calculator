@@ -6,107 +6,106 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Calculator for People with Low GPA</title>
     <link rel="icon" type="image/png" href="BC77CC2F-F40E-40E2-9F61-61FE1615A9AD.jpeg">
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background-color: #F5F5F5;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      #header {
-        background-color: #FFFFFF;
-        color: #141E30;
-        padding: 5px 20px;
-        text-align: center;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-        font-size: 24px;
-        font-weight: bold;
-      }
-      #calculator {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
-      }
-      #calculator input[type="text"] {
-        border-radius: 20px;
-        border: none;
-        padding: 10px;
-        font-size: 16px;
-        width: 80%;
-        max-width: 500px;
-        margin-right: 10px;
-        display: block;
-      }
-      #calculator button {
-        border-radius: 20px;
-        border: none;
-        padding: 10px;
-        font-size: 16px;
-        background-color: #6CC070;
-        color: #FFFFFF;
-        cursor: pointer;
-      }
-      #content {
-        padding: 30px 20px;
-        text-align: center;
-        flex: 1 0 auto;
-      }
-      #content p {
-        font-size: 20px;
-        line-height: 1.5;
-        color: #141E30;
-        margin-bottom: 30px;
-      }
-      #content input[type="text"] {
-        border-radius: 20px;
-        border: none;
-        padding: 10px;
-        font-size: 16px;
-        width: 80%;
-        max-width: 500px;
-        margin: 0 auto;
-        display: block;
-      }
-      #footer {
-        background-color: #FFFFFF;
-        color: #9B9B9B;
-        padding: 20px;
-        text-align: center;
-        font-size: 14px;
-        margin-top: auto;
-      }
-            #calc-input {
-        border-radius: 20px;
-        border: none;
-        padding: 10px;
-        font-size: 16px;
-        width: 80%;
-        max-width: 500px;
-        margin: 0 auto;
-        display: block;
-      }
-      #calc-btn {
-        background-color: #6AB04A;
-        border: none;
-        color: #FFFFFF;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 20px;
-        cursor: pointer;
-        margin-left: 10px;
-      }
-      #result {
-        font-size: 24px;
-        margin-top: 20px;
-        color: #141E30;
-        font-weight: bold;
-      }
-    </style>
+   <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #header {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  #content {
+    padding: 30px 20px;
+    text-align: center;
+    flex: 1 0 auto;
+  }
+  #content p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  #content input[type="text"] {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    background-color: #2d2d2d;
+    color: #FFFFFF;
+  }
+  #calculator {
+    margin-top: 30px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .calculator-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .calculator-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .calculator-button:hover {
+    background-color: #FFFFFF;
+    color: #1e1e1e;
+  }
+  .calculator-button:focus {
+    outline: none;
+  }
+  .calculator-input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+    text-align: right;
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+  }
+  .calculator-button-green {
+    background-color: #37A745;
+  }
+  .calculator-button-green:hover {
+    background-color: #FFFFFF;
+    color: #37A745;
+  }
+  .calculator-button-green:focus {
+    outline: none;
+  }
+</style>
+
   </head>
   <body>
     <div id="header">
