@@ -7,67 +7,67 @@
     <title>Calculators</title>
     <link rel="icon" type="image/png" href="BC77CC2F-F40E-40E2-9F61-61FE1615A9AD.jpeg">
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background-color: #F5F5F5;
+      /* CSS for the search bar */
+      #search-container {
         display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
       }
-      #header {
-        background-color: #FFFFFF;
-        color: #141E30;
-        padding: 10px 20px;
-        text-align: center;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-        font-size: 30px;
-        font-weight: bold;
-      }
-      #content {
-        padding: 30px 20px;
-        text-align: center;
-        flex: 1 0 auto;
-      }
-      #content p {
-        font-size: 20px;
-        line-height: 1.5;
-        color: #141E30;
-        margin-bottom: 30px;
-      }
-      #content input[type="text"] {
+      #search-box {
+        width: 80%;
+        max-width: 400px;
+        height: 35px;
         border-radius: 20px;
         border: none;
-        padding: 10px;
+        outline: none;
+        padding: 5px 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
         font-size: 16px;
-        width: 80%;
-        max-width: 500px;
-        margin: 0 auto;
-        display: block;
       }
-      #footer {
-        background-color: #FFFFFF;
-        color: #9B9B9B;
+      #search-button {
+        width: 50px;
+        height: 35px;
+        background-color: #BC77CC;
+        border-radius: 20px;
+        border: none;
+        margin-left: 10px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #search-button:hover {
+        background-color: #9F5F9B;
+      }
+      /* CSS for the content section */
+      #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
+      }
+      h1 {
+        font-size: 72px;
         text-align: center;
-        font-size: 14px;
-        margin-top: auto;
+        margin-bottom: 30px;
+        color: #BC77CC;
+      }
+      p {
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
       }
     </style>
   </head>
   <body>
-    <div id="header">
-      <h1>Calculators</h1>
-    </div>
     <div id="content">
-      <p>Welcome to our collection of calculators! Please use the search bar below to find the calculator you need.</p>
-      <form>
-        <input type="text" placeholder="Search...">
-      </form>
-    </div>
-    <div id="footer">
-      <p>&copy; 2023 Mobile Home Page. All rights reserved.</p>
+      <h1>calculators for people with low gpa</h1>
+      <p>Find useful calculators to help you improve your GPA.</p>
+      <div id="search-container">
+        <input type="text" id="search-box" placeholder="Search for a calculator">
+        <button id="search-button">Go</button>
+      </div>
     </div>
   </body>
 </html>
