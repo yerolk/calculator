@@ -22,10 +22,8 @@
         padding: 10px 20px;
         text-align: center;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-      }
-      #header h1 {
-        margin: 0;
-        font-size: 26px;
+        font-size: 30px;
+        font-weight: bold;
       }
       #content {
         padding: 30px 20px;
@@ -38,30 +36,15 @@
         color: #141E30;
         margin-bottom: 30px;
       }
-      #content ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-      }
-      #content li {
-        margin: 0 10px;
-      }
-      #content a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-weight: bold;
+      #content input[type="text"] {
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
         font-size: 16px;
-        padding: 12px 20px;
-        border-radius: 30px;
-        background-color: #141E30;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-      }
-      #content a:hover {
-        background-color: #FFFFFF;
-        color: #141E30;
-        transition: all 0.2s ease-in-out;
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
       }
       #footer {
         background-color: #FFFFFF;
@@ -75,19 +58,16 @@
   </head>
   <body>
     <div id="header">
-      <h1>Mobile Home Page</h1>
+      <h1>Calculators</h1>
     </div>
     <div id="content">
-      <p>Welcome to our mobile home page! We're glad you're here.</p>
-      <p>Here are some links to get you started:</p>
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
+      <p>Welcome to our collection of calculators! Please use the search bar below to find the calculator you need.</p>
+      <form>
+        <input type="text" placeholder="Search...">
+      </form>
     </div>
     <div id="footer">
-      <p>&copy; 2023 yeros calculators. All rights reserved.</p>
+      <p>&copy; 2023 Mobile Home Page. All rights reserved.</p>
     </div>
   </body>
 </html>
